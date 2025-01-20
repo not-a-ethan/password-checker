@@ -1,6 +1,6 @@
 {
   "name": "ethan-password-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Validates passwords based on criteria",
   "main": "index.js",
   "scripts": {
