@@ -8,19 +8,19 @@ const criteria = {
 
 function setup(minL, maxL, special, num) {
     if (minL < 0) {
-        return [null, "Min length must be atleast 0"];
+        return [false, "Min length must be atleast 0"];
     }
 
     if (maxL < minL) {
-        return [null, "Max length must be greater than min length"];
+        return [false, "Max length must be greater than min length"];
     }
 
     if (special < 0) {
-        return [null, "Special charecters must be atleast 0"];
+        return [false, "Special charecters must be atleast 0"];
     }
     
     if (num < 0) {
-        return [null, "Numbers charecters must be atleast 0"];
+        return [false, "Numbers charecters must be atleast 0"];
     }
 
     criteria.init = true;
@@ -62,7 +62,7 @@ function validate(password) {
         return [false, "Not enough special charecter"];
     }
 
-    return [true, ""];
+    return [true, null];
 }
 
 module.exports = {setup, validate};
