@@ -67,4 +67,4 @@ function validate(password) {
     return [true, ""];
 }
 
-module.exports = setup, validate;
+module.exports = {setup, validate};
