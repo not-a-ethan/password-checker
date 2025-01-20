@@ -46,18 +46,16 @@ function validate(password) {
     }
 
     let num = 0;
-    let special = 0;
+    let special = password.match(/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/g);
 
     for (let i = 0; i < password.length; i++) {
-        if (Number(password.charAt(i)) !== Nan) {
+        if (Number(password.charAt(i)) !== NaN) {
             num++;
-        } else if (/[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(password)) {
-            special++;
         }
     }
 
     if (num < criteria['min-num']) {
-        return [false, "Not enough number"];
+        return [false, "Not enough numbers"];
     }
 
     if (special < criteria['min-special']) {
