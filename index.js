@@ -49,7 +49,7 @@ function validate(password) {
     let special = password.match(/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/g);
 
     for (let i = 0; i < password.length; i++) {
-        if (Number(password.charAt(i)) !== NaN) {
+        if (!isNaN(parseFloat(password.charAt(i)))) {
             num++;
         }
     }
