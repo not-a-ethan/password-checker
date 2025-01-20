@@ -1,0 +1,19 @@
+{
+  "name": "password-checker",
+  "version": "1.0.0",
+  "description": "Validates passwords based on criteria",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/not-a-ethan/password-checker.git"
+  },
+  "author": "Ethan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/not-a-ethan/password-checker/issues"
+  },
+  "homepage": "https://github.com/not-a-ethan/password-checker#readme"
+}
